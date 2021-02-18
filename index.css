@@ -441,8 +441,7 @@ h1, h2, h3, h4, h5, h6 {
         display: none;
     }
     .banner .imgBox{
-        max-width: 80%;
-        margin-top: 100px;
+        margin-top: 60px;
     }
 }
 
