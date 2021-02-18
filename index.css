@@ -150,7 +150,6 @@ h1, h2, h3, h4, h5, h6 {
         width: 30px;
         height: 30px;
         background: url('images/list.png');
-        filter: invert(1);
         background-size: 30px;
         cursor: pointer;
         background-repeat: no-repeat;
@@ -179,13 +178,14 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: center;
         align-items: center;
     }
-
     .nav.active{
         left: 0;
     }
-
     .nav li{
         margin: 15px 0;
+    }
+    .nav li a{
+        color: #ffffff;
     }
 
     .banner{
@@ -237,6 +237,28 @@ h1, h2, h3, h4, h5, h6 {
     .sci li a svg{
         width: 20px;
         height: 20px;
+    }
+}
+@media(max-width:450px){
+    .menuicon{
+        right: 40px;
+        width: 20px;
+        height: 20px;
+        background-size: 20px;
+    }
+    .banner .imgBox img{
+        width: 200px;
+    }
+    .sci{
+        bottom: 0px;
+        left: 0px;
+    }
+    .sci li a{
+        font-size: 0.8em;
+    }
+    .sci li a svg{
+        width: 18px;
+        height: 18px;
     }
 }
 
@@ -411,6 +433,18 @@ h1, h2, h3, h4, h5, h6 {
         transition: none;
     }
 }
+@media(max-width:360px){
+    .service-containers::before{
+        display: none;
+    }
+    .sci{
+        display: none;
+    }
+    .banner .imgBox{
+        max-width: 80%;
+        margin-top: 100px;
+    }
+}
 
 /* -----------------GALLERY */
 .gallery{
@@ -542,7 +576,6 @@ h1, h2, h3, h4, h5, h6 {
     transition-delay: 0.3s;
 }
 
-
 /* ---------------TEAM */
 .team{
     display: flex;
@@ -628,6 +661,13 @@ h1, h2, h3, h4, h5, h6 {
 .team-container .team-card .team-content .social a + a {
     margin-left: 8px;
 }
+@media(max-width:380px){
+    .team-container .team-card{
+        width: 250px;
+        margin: 10px;
+    }
+}
+
 
 /* ----------------------CONTACT */
 .contact{
@@ -740,8 +780,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 40px;
     margin-right: 30px;
     margin-bottom: 20px;
-    width: 400px;
-    height: 430px;
+    width: fit-content;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
