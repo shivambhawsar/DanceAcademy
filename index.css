@@ -513,6 +513,19 @@ h1, h2, h3, h4, h5, h6 {
         height: 200px;
     }
 }
+@media(max-width:360px){
+    .gallery-container .gallery-card{
+        width: 230px;
+    }
+    .gallery-container .gallery-card .gallery-imgBox{
+        width: 230px;
+        height: 230px;
+    }
+    .gallery-container .gallery-card .gallery-content{
+        width: 230px;
+    }
+       
+}
 
 /* ------------TESTIMONIALS */
 .testimonials{
